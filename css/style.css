@@ -4,6 +4,10 @@
   font-family: monospace;
 }
 
+body {
+  background-color: #f5f5f5;
+}
+
 h1 {
   text-align: center;
   margin-top: 5%;
@@ -36,17 +40,17 @@ button.add {
   gap: 5px;
   border: 2px solid #212121;
   border-radius: 4px;
-  background-color: #ffffff00;
+  background-color: rgb(126, 255, 122);
 }
 
 button.add:hover {
   cursor: pointer;
-  background-color: lightgreen;
+  background-color: rgb(85, 233, 92);
   transition: 0.1s;
 }
 
 button.add:active {
-  background-color: rgb(94, 194, 94);
+  background-color: rgb(32, 248, 43);
 }
 
 #input-container {
@@ -55,4 +59,84 @@ button.add:active {
   align-items: center;
   justify-content: space-around;
   gap: 5px;
+}
+
+#listArea {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.item {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 70%;
+  border: 2px solid #212121;
+  border-radius: 4px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.item.marked {
+  background-color: #c7c7c7;
+}
+
+.item.marked .item-title {
+  text-decoration: line-through;
+}
+
+.item:hover {
+  cursor: pointer;
+  background-color: #efefef;
+  transition: 0.1s;
+}
+
+.item:active {
+  background-color: #c7c7c7;
+}
+
+button.delete {
+  margin: 5px;
+  padding: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  border: 2px solid #212121;
+  border-radius: 4px;
+  background-color: rgb(255, 122, 122);
+}
+
+button.delete:hover {
+  cursor: pointer;
+  background-color: rgb(233, 85, 85);
+  transition: 0.1s;
+}
+
+button.delete:active {
+  background-color: rgb(248, 32, 32);
+}
+
+.item-icon {
+  flex: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-title {
+  flex: 55%;
+}
+
+.item-date {
+  flex: 15%;
 }
