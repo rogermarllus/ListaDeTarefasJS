@@ -23,6 +23,8 @@ function addTask() {
     main.innerHTML += newTaskElement;
     input.value = "";
     input.focus();
+  } else {
+    alert("Informe o título da tarefa para adicioná-la!");
   }
 }
 
