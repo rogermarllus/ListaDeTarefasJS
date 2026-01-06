@@ -14,26 +14,17 @@
     <header>
       <h1>Lista de Tarefas JS</h1>
       <div id="input-container">
-        <input type="text" placeholder="Digite o título da tarefa..." />
-        <button class="add">
+        <input
+          id="input"
+          type="text"
+          placeholder="Digite o título da tarefa..."
+        />
+        <button id="btn-add" class="add" onclick="addTask()">
           <i class="bi bi-plus-square-fill"></i> Adicionar
         </button>
       </div>
     </header>
-    <main id="listArea">
-      <div class="item">
-        <div class="item-icon"><i class="bi bi-circle"></i></div>
-        <div class="item-title">Teste de Título</div>
-        <div class="item-date">15:03:34</div>
-        <button class="delete"><i class="bi bi-trash-fill"></i> Excluir</button>
-      </div>
-      <div class="item marked">
-        <div class="item-icon"><i class="bi bi-check-circle-fill"></i></div>
-        <div class="item-title">Teste de Título</div>
-        <div class="item-date">15:03:34</div>
-        <button class="delete"><i class="bi bi-trash-fill"></i> Excluir</button>
-      </div>
-    </main>
+    <main id="listArea"></main>
     <script src="js/script.js"></script>
   </body>
 </html>
